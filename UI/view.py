@@ -32,6 +32,8 @@ class View(ft.UserControl):
         self.ddyear = ft.Dropdown(label="Anno",
                                   hint_text="Anno da analizzare per gli avvistamenti.")
 
+        self._controller.fillDDYear()
+
         self.ddshape = ft.Dropdown(label="Shape",
                                    hint_text="Forma da analizzare per gli avvistamenti.")
 
